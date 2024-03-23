@@ -66,7 +66,6 @@ header li::marker {
 
 .contact {
     height:  100vh;
-    background-color: #dedede;
     margin: 0;
 }
 
@@ -91,8 +90,7 @@ form label {
     margin: .25em 1em;
 }
 
-form input,
-form textarea {
+form input{
     font-size: 1.25rem;
     width: 90%;
     font-size: 1.2rem;
@@ -102,10 +100,6 @@ form textarea {
     border: none;
     border-radius: 5px;
     margin: .75em auto;
-}
-
-form textarea {
-    height: 30%;
 }
 
 form input::placeholder {
@@ -134,19 +128,103 @@ form button:focus {
 .contact img {
     display: block;
     width: 90%;
-    height: auto;
+    height: 50%;
     margin: 2em auto .5em;
     border-radius: 10px;
 }
 
 footer{
     text-align: center;
-    background-color: #1954de;
-    color: #fff;
+    color: #ff9100;
     padding: .75rem;
+}
+
+footer p {
+    color: #037715;
 }
 
 footer p {
     margin-top: .5em;
 }
 
+@media (min-width: 768px) {
+    .wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    header,
+    main {
+        width: 50%;
+    }   
+
+    header {
+        padding: 2em;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header h4 {
+        font-size: 1.5rem;
+    }
+
+    header img {
+        width: 70%;
+    }
+
+    header p {
+        font-size: 2.25rem;
+    }
+
+    header ul {
+        margin: 0;
+        list-style: none;
+    }
+
+    header li {
+        font-size: 1.75rem;
+        margin: 0 auto;
+    }
+
+    header li::marker {
+        font-size: .75rem;
+    }
+
+    .contact {
+        align-self: flex-start;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    form label {
+        font-size: 1.5rem;
+    }
+
+    form input {
+        font-size: 1.5rem;
+    }
+
+    form button {
+        font-size: 2rem;
+        margin-bottom: 1em;
+    }
+
+    .contact img {
+        width: 80%;
+        height: 50%;
+        margin-top: 0;
+    }
+
+    footer {
+        margin-top: 2em;
+        padding: 1em;
+    }
+
+    footer p {
+        font-size: 1.25rem;
+    }
+}
