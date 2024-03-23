@@ -6,17 +6,11 @@
   padding: 0;
 }
 
-header,
-.contact {
-    height: 100vh;
-    max-width: 65ch;
-}
-
-
 header {
     background: #1954de;
     color: #eaeaea;
     padding: 1.5em;
+    
 }
 
 header h1 {
@@ -50,48 +44,37 @@ text-align: center;
 padding: 0.5em 0;
 }
 
+header ul {
+    margin: -.75rem;
+}
+
 header li {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     max-width: 40ch;
-    padding-left: 1.5em;
-    list-style-position: inside;
-    text-indent: -2rem;
-    margin: .5rem 0
+    padding-left: 3em;
+    background-image: url(assets/images/icons8-skateboard.svg);
+    background-repeat: no-repeat;
+    line-height: 1.15;    
+    margin: .5rem 0;
 }
 
 header li::marker {
     color: #037715;
-    font-size: 1.5rem;
+    font-size: .5rem;
 }
 
 .contact {
     height:  100vh;
-    position: relative;
-}
-
-.contact::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.1;
-    background-image: url(assets/images/BTRLogo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-color: #dedede;
+    margin: 0;
 }
 
 .contact h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
     padding: .75em;
-    margin: .75em;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -100,7 +83,6 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: space-between;
-    height: 60vh;
 }
 
 form label {
@@ -111,6 +93,7 @@ form label {
 
 form input,
 form textarea {
+    font-size: 1.25rem;
     width: 90%;
     font-size: 1.2rem;
     padding: 1em;
@@ -121,24 +104,49 @@ form textarea {
     margin: .75em auto;
 }
 
+form textarea {
+    height: 30%;
+}
+
 form input::placeholder {
     color: #fff;
 }
 
-.contact form button{
+form button{
+    font-size: 1.5rem;
+    font-weight: 900;
     padding: 1em;
     background-color: #037715;
     color: #eaeaea;
     border: none;
     border-radius: 5px;
-    margin: 0 1em .75em;
+    margin: 2em 1em;
     cursor: pointer;
 }
 
-.contact form button:hover,
-.contact form button:focus {
+form button:hover,
+form button:focus {
+    cursor: pointer;
     background-color: #eaeaea;
     color: #037715;
 }
 
+.contact img {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 2em auto .5em;
+    border-radius: 10px;
+}
+
+footer{
+    text-align: center;
+    background-color: #1954de;
+    color: #fff;
+    padding: .75rem;
+}
+
+footer p {
+    margin-top: .5em;
+}
 
