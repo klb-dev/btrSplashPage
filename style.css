@@ -6,6 +6,12 @@
     padding: 0;
 }
 
+body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
 header {
     background: #1954de;
     color: #eaeaea;
