@@ -112,14 +112,12 @@ form button{
     width :80%;
     font-size: 1.5rem;
     font-weight: 900;
-    
     margin: 2em auto;
-    cursor: pointer;
 }
 
 form button:hover,
 form button:focus {
-    cursor: pointer;
+    cursor: not-allowed;
     background-color: #eaeaea;
     color: #037715;
 }
@@ -187,7 +185,7 @@ footer p {
     header li {
         font-size: 1.75rem;
         line-height: 1.25;
-        margin: 0 auto;
+        margin: 0 auto .1em;
     }
 
     .contact {
@@ -214,13 +212,13 @@ footer p {
     form button {
         width: 70%;
         font-size: 2rem;
-        margin: 1.40em auto;
+        margin: 1em auto;
         padding: .6em 0;
     }
 
     .contact img {
         width: 80%;
-        height: 79%;
+        height: 100%;
         margin-top: 0;
     }
 
