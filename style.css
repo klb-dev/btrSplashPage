@@ -14,7 +14,8 @@ header {
 }
 
 header h1 {
-    font-size: 1.65rem;
+    font-size: 2.5rem;
+    font-weight: 900;
     padding: 0.5em 0;
     margin-bottom: 0.5em;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
@@ -22,8 +23,8 @@ header h1 {
 }
 
 header h4 {
-    font-size: 1.25rem;
-    font-weight: 400;
+    font-size: 1.75rem;
+    font-weight: 900;
     margin: 0 auto 1.5em;
     max-width: 40ch;
     text-transform: capitalize;
@@ -32,46 +33,41 @@ header h4 {
 
 header img {
     display: block;
-    width: 100%;
+    width: 80%;
     height: auto;
     margin: 0 auto 1.75em;
 }
 
 header p {
-font-size: 1.5rem;
-font-weight: bold;
+font-size: 2rem;
+font-weight: 900;
 text-align: center;
 padding: 0.5em 0;
 }
 
 header ul {
-    margin: -.75rem;
+    list-style: none;
 }
 
 header li {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 400;
     max-width: 40ch;
     padding-left: 3em;
     background-image: url(assets/images/icons8-skateboard.svg);
     background-repeat: no-repeat;
     line-height: 1.15;    
-    margin: .5rem 0;
+    margin: .5rem auto;
 }
 
-header li::marker {
-    color: #037715;
-    font-size: .5rem;
-}
 
 .contact {
-    height:  100vh;
     margin: 0;
 }
 
 .contact h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 900;
     padding: .75em;
     margin: 0 auto;
     text-align: center;
@@ -87,18 +83,24 @@ form {
 form label {
     font-size: 1.25rem;
     font-weight: 700;
-    margin: .25em 1em;
+    margin: .2em 0 .1em 2em;
+}
+
+form input,
+form button {
+    border: none;
+    border-radius: 10px;
+    padding: 1em;
+    background-color: #037715;
+    color: #eaeaea;
 }
 
 form input{
     font-size: 1.25rem;
     width: 90%;
     font-size: 1.2rem;
-    padding: 1em;
     color: #fff;
     background-color: rgba(0, 142, 0, .4);
-    border: none;
-    border-radius: 5px;
     margin: .75em auto;
 }
 
@@ -107,14 +109,11 @@ form input::placeholder {
 }
 
 form button{
+    width :80%;
     font-size: 1.5rem;
     font-weight: 900;
-    padding: 1em;
-    background-color: #037715;
-    color: #eaeaea;
-    border: none;
-    border-radius: 5px;
-    margin: 2em 1em;
+    
+    margin: 2em auto;
     cursor: pointer;
 }
 
@@ -137,7 +136,7 @@ footer{
     text-align: center;
     color: #ff9100;
     padding: .75rem;
-    margin-top: 3.75em;
+    background-color: #282828;
 }
 
 footer p {
@@ -161,6 +160,7 @@ footer p {
 
     header {
         padding: 2em;
+        border-radius: 0 10px 10px 0;
     }
 
     header h1 {
@@ -176,7 +176,7 @@ footer p {
     }
 
     header p {
-        font-size: 2.25rem;
+        font-size: 2.5rem;
     }
 
     header ul {
@@ -186,11 +186,8 @@ footer p {
 
     header li {
         font-size: 1.75rem;
+        line-height: 1.25;
         margin: 0 auto;
-    }
-
-    header li::marker {
-        font-size: .75rem;
     }
 
     .contact {
@@ -205,24 +202,30 @@ footer p {
         font-size: 1.5rem;
     }
 
+    form input,
+    form button{
+        border-radius: 20px;
+    }
+
     form input {
         font-size: 1.5rem;
     }
 
     form button {
+        width: 70%;
         font-size: 2rem;
-        margin-bottom: 1em;
+        margin: 1.40em auto;
+        padding: .6em 0;
     }
 
     .contact img {
-        width: 95%;
-        height: 50%;
+        width: 80%;
+        height: 79%;
         margin-top: 0;
     }
 
     footer {
-        background-color: #282828;
-        margin-top: 2em;
+        margin-top: 1em;
         padding: 1em;
     }
 
